@@ -27,6 +27,10 @@ console.log('\n' + pattern); // used \n here as console pushes "" signs which pr
  */
 
  /*VERSION 2*/ 
+var sayi = prompt('Grid size');
+
+if (sayi % 2 != 0) {sayi++;}
+
 const pattern = (size) => { 
     let pattern = '';
   for (x=1; x <= size; x++){
@@ -41,4 +45,4 @@ const pattern = (size) => {
   }
     return pattern;
   };
-  console.log('\n' + pattern(Number(prompt('Grid size (doesnt handle input check)'))));
+  console.log('\n' + pattern(Number(sayi)));
